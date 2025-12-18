@@ -13,9 +13,16 @@ body {
 	padding: 0;
 	display: block;
 }
+.container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 65px auto;
+}
+
 .special {
 	height: 35px;
-	width: 100vw;
+	width: 100%;
 	padding: 4px;
 	margin: 0%;
 	text-align: center;
@@ -41,8 +48,12 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin: 25px auto;
-	width: 60vw; 
+	/* width: 60vw;  */
 	padding: 15px 30px;
+	max-width: 1100px;
+	width: 100%;
+	margin: 25px auto;
+	padding: 0 16px;
 }
 
 .hero {
@@ -64,7 +75,8 @@ header {
 }
 .hero img {
 	height: 32px;
-	width: 39px; margin: 6px;
+	width: 39px;
+	margin: 6px;
 	align-items: center;
 	vertical-align: middle;
 }
@@ -88,6 +100,14 @@ header {
 	align-items: center;
 	gap: 4px;
 	cursor: pointer;
+}
+.right ul li span {
+	font-size: 18px;
+	margin-right: 11px;
+	width: 7px;
+	text-align: center;
+	margin-bottom: 2px;
+	margin-left: 19px;
 }
 
 .right ul :nth-child(3) {
@@ -117,10 +137,23 @@ header {
 	text-align: center;
 }
 .banner {
-	margin: 20px;
-	height: 546.75px;
-	width: 970px;
-	border-radius: 40px;
+	width: 100%;
+	max-width: 1100px;
+	width: 972px;
+	margin: 20px auto;
+	height: 546px;
+	border-radius: 20px;
+	justify-content: center;
+
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+}
+.banner img {
+	object-fit: cover;
+	display: block;
+	height: 546px;
+	border-radius: 14px;
 }
 
 .logo {
@@ -134,13 +167,13 @@ header {
 	font-weight: bolder;
 	font-size: 18px;
 	margin: auto;
-	width: 63vw;
 	display: flex;
 	gap: 16px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
-	padding: 0px;
+	width: 1100px;
+	padding: 20px 65px;
 }
 .details .small {
 	color: #242e3c;
@@ -189,16 +222,22 @@ header {
 	border: 1px solid #ddd;
 }
 .food-steps {
-	margin: 20px auto;
 	display: flex;
 	justify-content: center;
-	width: 64vw;
 	font-weight: bold;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	max-width: 1100px;
+	width: 100%;
+	margin: 20px auto;
+	padding: 10px 65px;
 }
+.dopamine-text span {
+	display: block;
+}
+
 .food-steps .title {
 	font-size: 22px;
 	font-weight: 700;
@@ -269,11 +308,13 @@ header {
 	justify-content: center;
 	align-items: center;
 	padding: 16px;
-	width: 65vw;
+
 	line-height: 25px;
-	margin: 40px auto;
 	text-align: center;
 	font-size: 18px;
+	max-width: 1100px;
+	width: 100%;
+	margin: 40px auto;
 }
 
 .dopa {
@@ -282,10 +323,10 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 30px;
-	width: 100vw;
+	padding: 30px 0px;
 	margin-bottom: 30px;
 	text-align: center;
+	width: 100%;
 }
 .dopa h1 {
 	font-size: 38px;
@@ -369,13 +410,13 @@ header {
 	background: #e4d9c1;
 	padding: 16px;
 	border-radius: 16px;
-	font-size: 18px;
+	font-size: 17px;
 	color: #000000;
 	width: 65vw;
 	font-style: italic;
 	text-align: start;
 	margin-bottom: 30px;
-	margin: 30px auto;
+	margin: 30px 0px;
 	font-weight: 400;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, sans-serif;
@@ -395,21 +436,31 @@ header {
 	align-items: start;
 	justify-content: start;
 	margin: auto;
-	width: 65vw;
 	gap: 16px;
+	max-width: 1100px;
+	width: 100%;
+	padding: 20px 65px;
+	margin: auto;
 }
 .image-section {
-	margin: 24px;
+	flex: 0 0 50%;
 }
+
+.image-section img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 .product-title {
-	justify-content: center;
-	margin: 48px auto auto;
-	width: 65vw;
-	text-align: center;
+	margin: 48px auto;
+	padding: 0px 65px;
 }
 .product-title h1 {
 	font-size: 38px;
-	margin: 10px auto;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
 	font-weight: bolder;
 }
 
@@ -419,17 +470,20 @@ header {
 	margin-right: 20px;
 	font-weight: 400;
 	color: #333;
+	line-height: 48px;
 	line-height: 1.6;
 }
 
 .product-decription {
 	flex: auto;
+	flex: 1;
+
+	margin-left: 20px;
 }
 
 .product-decription h2 {
 	font-size: 24px;
 	line-height: 120%;
-	margin: 15px auto;
 }
 
 .desc {
@@ -507,50 +561,46 @@ header {
 
 /* benefits */
 .benefits-body {
+	padding: 30px 0;
 	background: #fcf8ef;
-	padding: 30px;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
 	text-align: center;
 }
 
 .benefits-body h1 {
-	align-items: center;
-	text-align: center;
 	font-size: 36px;
-	margin: 10px auto;
-	width: 65vw;
-}
-.benefit-img {
-	height: 400;
-	width: 480px;
-	align-content: start;
+	margin: 0 auto 12px;
+	max-width: 1100px;
+	width: 100%;
 }
 
 .benefits-body p {
-	align-items: center;
 	font-size: 18px;
-	font-weight: 400;
-	text-align: center;
-	margin: 0px;
-	margin-bottom: 10px;
+	max-width: 1100px;
+	margin: 0 auto 20px;
 }
+.benefit-img {
+	width: 480px;
+	max-width: 100%;
+	flex-shrink: 0;
+}
+
 .benefits {
-	width: 65vw;
-	margin: auto;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	gap: 30px;
-	margin-top: 20px;
+
+	max-width: 1100px;
+	width: 100%;
+	margin: 2px auto;
+	padding: 0px 65px;
 }
 
 .benefits .benefit-items {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	width: 100%;
 }
 .benefit-items .item {
 	display: grid;
@@ -603,6 +653,7 @@ header {
 	.benefits-body h1 {
 		font-size: 24px;
 		font-weight: 700;
+		margin: 0px;
 		line-height: 32px;
 	}
 
@@ -611,6 +662,8 @@ header {
 	}
 
 	.benefits {
+		margin: 0px;
+		padding: 0px;
 		width: 100%;
 		flex-direction: column;
 		gap: 16px;
@@ -680,6 +733,9 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 32px;
+	background: #a45e19;
+	padding: 48px 0px;
+	text-align: center;
 }
 .testimonial-body h1 {
 	color: white;
@@ -687,11 +743,14 @@ header {
 	font-weight: bolder;
 }
 .testimonial-body .testimonial {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items: stretch;
 	gap: 20px;
-	flex-wrap: wrap;
+	padding: 10px 65px;
 }
 
 .testimonial-card {
@@ -704,7 +763,6 @@ header {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	height: 45vh;
-	max-width: 18.5vw;
 	width: 100%;
 }
 
@@ -1035,6 +1093,14 @@ header {
 		white-space: nowrap;
 	}
 
+	.right ul li span {
+		font-size: 18px;
+		margin-right: 4px;
+		width: 7px;
+		text-align: center;
+		margin-bottom: 2px;
+		margin-left: 6px;
+	}
 	.hero {
 		font-size: 24px;
 	}
@@ -1042,7 +1108,8 @@ header {
 	.hero img {
 		height: 39px;
 		width: 36px;
-		margin: 0px; padding: 0px;
+		margin: 0px;
+		padding: 0px;
 	}
 	.main-sec {
 		padding: 23px 15px;
@@ -1052,25 +1119,7 @@ header {
 	.main-sec h3 {
 		width: 100%;
 		font-size: 24px;
-		/* margin: 8px 0; */
 		line-height: 120%;
-	}
-	.banner {
-		width: calc(100% - 30px);
-		height: 202px;
-		border-radius: 20px;
-		overflow: hidden;
-		margin: 0px;
-	}
-
-	.banner img {
-		width: 100%;
-		height: 100%;
-		display: block;
-		margin: 0px;
-		border-radius: 20px;
-
-		object-fit: contain;
 	}
 
 	.details {
@@ -1208,18 +1257,21 @@ header {
 	.red {
 		border-radius: 16px;
 		background: #f71d1d;
-		color: white;
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
 		padding: 16px;
-		width: 94vw;
-		line-height: 25px;
 		text-align: center;
-		margin: 20px 16px;
+
+		margin: 15px 15px;
+		width: calc(100% - 20px);
+	}
+	.red h3 {
+		line-height: 25px;
 		font-size: 17px;
+		color: white;
 	}
 
 	.dopa {
@@ -1274,8 +1326,9 @@ header {
 
 	.product-title {
 		justify-content: center;
-		margin: 16px auto auto;
+		margin: 16px;
 		width: 100%;
+		padding: 0px 0px;
 		text-align: center;
 	}
 	.product-title h1 {
@@ -1321,6 +1374,8 @@ header {
 
 	.product-decription {
 		width: 100%;
+		padding: 0px;
+		margin: 0px;
 	}
 
 	.product-decription h2 {
@@ -1366,6 +1421,8 @@ header {
 
 	.testimonial-body .testimonial {
 		flex-direction: column;
+		margin: 0px;
+		padding: 0px 0px;
 		gap: 16px;
 	}
 
@@ -1604,6 +1661,9 @@ header {
 	background: #d6edfb;
 	padding: 30px;
 	text-align: center;
+	/* max-width: 1100px; */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .offer-text {
@@ -1616,7 +1676,10 @@ header {
 .offer h2 {
 	font-size: 36px;
 	font-weight: 800;
-	width: 80vw;
+	margin: 20px auto;
+	padding: 20px 60px;
+	font-size: 36px;
+
 	margin: 20px auto;
 }
 
@@ -1681,6 +1744,7 @@ header {
 	width: 100%;
 	max-width: 1200px;
 	margin: 20px auto;
+	padding: 10px 65px;
 	overflow-x: hidden;
 }
 
@@ -1735,6 +1799,10 @@ header {
 	display: block;
 }
 .price {
+	margin: 0px 10px;
+	padding: 0px 0px;
+}
+h3 {
 	font-size: 28px;
 	font-weight: 700;
 	text-align: left;
@@ -1832,6 +1900,24 @@ header {
 }
 
 @media (max-width: 390px) {
+	.banner {
+		width: 94%;
+		border: 0.5px solid red;
+		padding-left: 6px;
+		max-width: 100%;
+		height: 202px; margin: 15px 16px;
+
+		border-radius: 14px;
+		justify-content: center;
+		/* overflow: hidden; */
+	}
+
+	.banner img {
+		width: 94%;
+		height: 202px;
+		object-fit: cover;
+		display: block;
+	}
 	.pricing-section {
 		grid-template-columns: 1fr;
 		max-width: 100%;
@@ -1857,6 +1943,7 @@ header {
 	.offer h2 {
 		font-size: 20px;
 		width: 100%;
+		padding: 0px 0px;
 	}
 
 	.offer-text {
@@ -1998,7 +2085,7 @@ header {
 		margin-top: 20px;
 		border-radius: 10px;
 	}
-	.end {
+	.dont-want {
 		text-decoration: underline;
 	}
 
